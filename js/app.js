@@ -40,7 +40,7 @@ async function loadSoftwareDeveloper() {
         html: 'views/software-developer.html',
         color: '#fbfffa',
         title: 'Software Developer',
-        url: '/software-developer'
+        url: '/software-engineer'
     });
 }
 
@@ -58,9 +58,7 @@ async function loadMusician() {
         try {
             audioElement.play();
             compositionHasBeenPlayed = true;
-            setTimeout(() => {
-                audioElement.muted = false;
-            }, 100);
+            audioElement.muted = false;
         }
         catch(error) {
             console.error(error);
@@ -79,10 +77,11 @@ async function loadMusician() {
 
 document.addEventListener('DOMContentLoaded', async () => {
     const location = window.location.pathname.toLowerCase();
-    if (location.includes('software-developer')) {
+    if (location.includes('software')) {
         await loadSoftwareDeveloper();
     }
     else if (location.includes('musician')) {
+        compositionHasBeenPlayed = true;
         await loadMusician();
     }
     else {

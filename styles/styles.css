@@ -1,5 +1,8 @@
 body {
     transition: background-color 1s ease;
+    margin: 0;
+    padding: 1em;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 h1 {
     margin-bottom: 0;
