@@ -1,0 +1,45 @@
+body {
+    transition: background-color 1s ease;
+}
+h1 {
+    margin-bottom: 0;
+}
+#content {
+    padding-bottom: 3em;
+}
+@media only screen and (max-device-width : 600px) {
+    h1 {
+        font-size: 6em;
+    }
+    h2, #social a, #audio-title {
+        font-size: 3em;
+    }
+    #audio-container {
+        width: 100%;
+    }
+    audio {
+        width: 50%;
+    }
+}
+img {
+    max-height: 50vh;
+    opacity: 0;
+    transition: opcaity 1s ease;
+    -moz-transition: opacity 1s ease;
+    -webkit-transition: opacity 1s ease;
+}
+#developer-img {
+    opacity: 1;
+    position: absolute;
+}
+#social {
+    margin-bottom: 1em;
+}
+#audio-container {
+    position: fixed;
+    bottom: 0;
+    opacity: 0;
+    transition: opcaity 1s ease;
+    -moz-transition: opacity 1s ease;
+    -webkit-transition: opacity 1s ease;
+}
