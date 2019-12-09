@@ -4,6 +4,9 @@ body {
     padding: 1em;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
+a {
+    white-space: nowrap;
+}
 h1 {
     margin-bottom: 0;
 }
